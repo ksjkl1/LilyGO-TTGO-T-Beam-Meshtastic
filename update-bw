@@ -2,7 +2,7 @@ set +xv
 meshtastic --port /dev/ttyUSB0 --set mesh_sds_timeout_secs 4294967295
 meshtastic --port /dev/ttyUSB0 --set phone_timeout_secs 4294967295
 meshtastic --port /dev/ttyUSB0 --set phone_sds_timeout_sec 4294967295
-#meshtastic --port /dev/ttyUSB0 --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPMD3BMR6NH
+#meshtastic --port /dev/ttyUSB0 --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPXXXXXXXX
 meshtastic --port /dev/ttyUSB0 --set region 3
 meshtastic --port /dev/ttyUSB0 --set-owner 'Hans Kleijn'
 #meshtastic --port /dev/ttyUSB0 --set wait_bluetooth_secs 3600
