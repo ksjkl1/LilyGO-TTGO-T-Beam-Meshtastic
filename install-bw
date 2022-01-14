@@ -1,7 +1,7 @@
 
 ./device-install.sh -f firmware-tbeam-1.2.50.bin -p COM12
 echo "sleep 15" 
-meshtastic --port COM12 --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPMD3BMR6NH --set region 3 --set-owner 'Hans Kleijn'
+meshtastic --port COM12 --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPMXXXXXXX --set region 3 --set-owner 'Hans Kleijn'
 #esptool.py --port COM3 --baud 921600 flash_id
 
 
