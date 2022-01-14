@@ -1,0 +1,15 @@
+set +xv
+meshtastic --port /dev/ttyUSB0 --set mesh_sds_timeout_secs 4294967295
+meshtastic --port /dev/ttyUSB0 --set phone_timeout_secs 4294967295
+meshtastic --port /dev/ttyUSB0 --set phone_sds_timeout_sec 4294967295
+#meshtastic --port /dev/ttyUSB0 --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPMD3BMR6NH
+meshtastic --port /dev/ttyUSB0 --set region 3
+meshtastic --port /dev/ttyUSB0 --set-owner 'Hans Kleijn'
+#meshtastic --port /dev/ttyUSB0 --set wait_bluetooth_secs 3600
+meshtastic --port /dev/ttyUSB0 --set ls_secs 3600
+meshtastic --port /dev/ttyUSB0 --version
+#meshtastic --port /dev/ttyUSB0 --setalt 4
+#meshtastic --port /dev/ttyUSB0 --setlat 52.06559
+#meshtastic --port /dev/ttyUSB0 --setlon  4.49776
+esptool.py --port /dev/ttyUSB0 --baud 921600 flash_id
+set -xv

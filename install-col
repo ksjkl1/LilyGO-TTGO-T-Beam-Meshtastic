@@ -1,0 +1,15 @@
+
+./device-install.sh -f firmware-tbeam-1.2.13.bin -p COM8
+echo "sleep 15" && sleep 15
+meshtastic --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPMD3BMR6NH
+meshtastic --set region 3
+meshtastic --set-owner 'Hans Kleijn col'
+meshtastic --settime
+meshtastic --set wait_bluetooth_secs 36000
+meshtastic --set ls_secs 3600
+meshtastic --ch-enable-admin
+meshtastic --version
+meshtastic --info
+esptool.py --port COM8 --baud 921600 flash_id
+
+
