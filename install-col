@@ -1,7 +1,7 @@
 
 ./device-install.sh -f firmware-tbeam-1.2.13.bin -p COM8
 echo "sleep 15" && sleep 15
-meshtastic --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPMD3BMR6NH
+meshtastic --set wifi_ap_mode false --set wifi_ssid TMNL-692331_EXT --set wifi_password 46U7HUPMXXXXXXXXXXX
 meshtastic --set region 3
 meshtastic --set-owner 'Hans Kleijn col'
 meshtastic --settime
